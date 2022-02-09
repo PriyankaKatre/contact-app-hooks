@@ -1,0 +1,52 @@
+{
+  "contacts": [
+    {
+      "id": "AA@1",
+      "name": "Priyankavxvxcv",
+      "photo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4PnVRmRAmyowSz7rmZntY9nXFNIFSoHbAG0w1YkRh7r2A1MJ6",
+      "mobile": "12457246724",
+      "email": "priyanka@gmail.com",
+      "company": "Dell",
+      "title": "Software Engineer",
+      "groupId": "1"
+    },
+    {
+      "id": "AA@2",
+      "name": "Manu",
+      "photo": "https://static.wixstatic.com/media/cb6c98_bb2d7b42207a405cb5ef88c84c87967c~mv2.jpg/v1/fill/w_560,h_560,al_c,q_80,usm_0.66_1.00_0.01/person-dummy.webp",
+      "mobile": "099999999999999",
+      "email": "manu@gmail.com",
+      "company": "Cognizent",
+      "title": "Project Manager",
+      "groupId": "2"
+    },
+    {
+      "id": "AA@3",
+      "name": "Rohit",
+      "photo": "https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_960_720.png",
+      "mobile": "12457246724",
+      "email": "rohit@gmail.com",
+      "company": "Univercity",
+      "title": "Scientist",
+      "groupId": "3"
+    }
+  ],
+  "Groups": [
+    {
+      "id": "1",
+      "name": "Family"
+    },
+    {
+      "id": "2",
+      "name": "Colleague"
+    },
+    {
+      "id": "3",
+      "name": "Friend"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    }
+  ]
+}
