@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export class ContactService {
-    static serviceUrl = `http://localhost:9000`;
+    static serviceUrl = `https://reactcontactapphooks.herokuapp.com`;
     static getAllGroups() {
         let dataUrl = `${this.serviceUrl}/groups`;
         return axios.get(dataUrl);

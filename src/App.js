@@ -8,6 +8,7 @@ import { EditContact } from './components/contacts/EditContact/EditContact';
 import { ViewContact } from './components/contacts/ViewContact/ViewContact';
 
 const App = () => {
+    const baseUrl = "http://localhost:4000/contacts"
   return (
     <React.Fragment>
        <NavBar/>

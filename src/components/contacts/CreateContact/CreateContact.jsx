@@ -27,16 +27,16 @@ export const CreateContact = () => {
         companyError: '',
         titleError: ''
     });
-    // let updateInput = (e) => {
-    //     setstate(
-    //         {
-    //         ...state,
-    //         contact:{
-    //             ...state.contact,
-    //             [e.target.name] : e.target.value
-    //         }
-    //     });
-    // }
+    let updateInput = (e) => {
+        setstate(
+            {
+            ...state,
+            contact:{
+                ...state.contact,
+                [e.target.name] : e.target.value
+            }
+        });
+    }
 
     let validateUsername = (event) => {
         setstate({...state ,
@@ -50,19 +50,6 @@ export const CreateContact = () => {
             setUserError({...userError , nameError: 'Enter a proper Name'})
             : setUserError({...userError , nameError: ''});
     }
-
-    // let validateEmail = (event) => {
-    //     setstate({...state ,
-    //         contact:{
-    //             ...state.contact,
-    //             email : event.target.value
-    //         }
-    //     });
-    //     let regExp = /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/;
-    //     !regExp.test(event.target.value) ?
-    //         setUserError({...userError , emailError: 'Enter a proper Email'})
-    //         : setUserError({...userError , emailError: ''});
-    // }
 
     let validateEmail = (event) => {
         setstate({...state ,
@@ -142,12 +129,14 @@ export const CreateContact = () => {
                                             <input type="text"
                                             name='photo'
                                             value={contact.photo}
-                                             className="form-control" placeholder='Photo Url' required/>
+                                            onChange= {updateInput}
+                                            className="form-control" placeholder='Photo Url'/>
                                         </div>
                                         <div className="mb-2">
                                             <input type="number"
                                             name='mobile'
                                             value={contact.mobile}
+                                            onChange= {updateInput}
                                             className="form-control" placeholder='Mobile' required/>
                                         </div>
                                         <div className="mb-2">
@@ -162,18 +151,21 @@ export const CreateContact = () => {
                                             <input type="text"
                                             name='company'
                                             value={contact.company}
-                                             className="form-control" placeholder='Company' required/>
+                                            onChange= {updateInput}
+                                            className="form-control" placeholder='Company' required/>
                                         </div>
                                         <div className="mb-2">
                                             <input type="text"
                                             name='title'
                                             value={contact.title}
-                                             className="form-control" placeholder='Title' required/>
+                                            onChange= {updateInput}
+                                            className="form-control" placeholder='Title' required/>
                                         </div>
                                         <div className="mb-2">
                                             <select className="form-control"
                                             name='groupId'
                                             value={contact.groupId}
+                                            onChange= {updateInput}
                                             required >
                                                 <option value ="">Select a Group</option>
                                                 {
